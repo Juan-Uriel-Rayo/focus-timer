@@ -1,24 +1,22 @@
-# ⏰ MiPomodoro App
+# Focus Timer (Pomodoro App)
 
-Una aplicación Pomodoro construida con **React Native** y **Expo**. Administra tu tiempo de trabajo y descansos con sesiones configuradas, animaciones, sonidos personalizados y notificaciones.
+Este es un temporizador Pomodoro creado con React Native, Expo y JavaScript. Puedes usarlo para gestionar tus sesiones de trabajo utilizando la técnica Pomodoro.
 
----
+## Descripción
 
-## 📱 Características
+Una aplicación para ayudarte a organizar tu tiempo usando el método Pomodoro, donde trabajas en intervalos de tiempo, separados por breves descansos.
 
-- Modo **Pomodoro** (25 minutos), **Descanso Corto** (5 min), y **Descanso Largo** (15 min)
-- Notificaciones locales al terminar cada sesión
-- Sonidos motivacionales diferentes por cada modo
-- Animación de celebración al completar un ciclo
-- Estados guardados automáticamente (modo, tiempo y si está activo)
-- Estilo visual moderno con `LinearGradient`
+## Requisitos
 
----
+- Tener instalado [Node.js](https://nodejs.org/)
+- Tener instalado [Expo Go](https://expo.dev/client) en tu dispositivo móvil
+- Tener [Git](https://git-scm.com/) para clonar el repositorio
 
-## 🚀 Instalación y ejecución
+## Instrucciones de Instalación
 
 ### 1. Clona el repositorio
 
+Primero, clona este repositorio a tu máquina local. Abre tu terminal y ejecuta el siguiente comando:
+
 ```bash
-git clone https://github.com/Juan-Uriel-Rayo/pomodoro-app.git
-cd MiPomodoro
+git clone https://github.com/Juan-Uriel-Rayo/focus-timer.git
