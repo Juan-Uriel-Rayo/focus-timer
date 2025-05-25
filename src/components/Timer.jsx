@@ -1,7 +1,7 @@
 import { Text, View, StyleSheet, Animated, Platform } from "react-native";
 import { useEffect, useRef, useState } from "react";
 
-export default function Timer({ tiempo, colorModo = "#fff" }) {
+export default function Timer({ tiempo, colorModo = "#5414" }) {
     const [showWarning, setShowWarning] = useState(false);
     const pulseAnim = useRef(new Animated.Value(1)).current;
 
@@ -76,23 +76,29 @@ const styles = StyleSheet.create({
         marginBottom: 20,
         ...Platform.select({
             ios: {
-                shadowColor: '#000',
+                shadowColor: 'white',
                 shadowOffset: { width: 0, height: 4 },
-                shadowOpacity: 0.3,
-                shadowRadius: 6,
+                shadowOpacity: 0.1,
+                shadowRadius: 10,
             },
             android: {
-                elevation: 10,
+                elevation: 52,
+            },
+            web: {
+                boxShadow: '0 4px 10px rgba(0, 0, 0, 0.1)',
             },
         }),
     },
     warningContainer: {
         backgroundColor: "rgba(70, 30, 30, 0.7)",
+        borderColor: "#ff5555",
     },
     tiempo: {
         fontSize: 72,
         fontWeight: "bold",
         textAlign: "center",
         fontVariant: ["tabular-nums"],
+        textShadowColor: "#000",
+        textShadowOffset: { width: 2, height: 2 },
     },
 });
